@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>meta}}
+</head>
+<body>
+    {{>nav}}
+    <div class="register-page container">
+        <div class="register box1">
+            <img src="./images/img1.svg" alt="later onn">
+        </div>
+        <div class="register box2">
+            <form action="/register" method="POST">
+                <div class="field">
+                    <label for="name"><span>name</span></label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name ">
+                </div>
+                <div class="field">
+                    <label for="email"><span>Email</span></label>
+                    <input type="email" id="email" placeholder="Enter your email " name="email">
+                </div>
+                <div class="field">
+                    <label for="Phone"><span>Phone</span></label>
+                    <input type="number" id="Phone" placeholder="Enter your Phone " name="phone">
+                </div>
+                <div class="field">
+                    <label for="password"><span>Password</span></label>
+                    <input type="password" id="password" placeholder="Enter your password " name="password">
+                </div>
+                <div class="field">
+                    <label for="Password"><span>Confirm Password</span></label>
+                    <input type="password" placeholder="Enter your confirm password " name="cpassword">
+                </div>
+                
+                <button type="submit">submit my details</button>
+            </form>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>

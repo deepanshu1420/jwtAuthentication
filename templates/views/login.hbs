@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>meta}}
+</head>
+<body>
+    {{>nav}}
+    <div class="login-box">
+        <div class="img-box">
+            <img src="./images/img2.svg" alt="later onn ...">
+        </div>
+        <div class="login-page">
+            <form action="/login" method="POST">
+                <div class="field" id="email">
+                    <label for="email">email</label>
+                    <input id="email" type="email" name="email" placeholder="enter your email here ...">
+                </div>
+                <div class="field">
+                    <label for="password">password</label>
+                    <input id="password" type="password" name="password" placeholder="enter your password here ...">
+                </div>
+                <input type="submit" value="log me in">
+            </form>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>
