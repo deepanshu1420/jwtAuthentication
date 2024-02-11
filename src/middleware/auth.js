@@ -9,7 +9,7 @@ async function auth(req,res , next){
         req.token = verify._id;
         next();
     }catch(e){
-        res.status(402).send(e);
+        res.status(402).render("login");
     }
 }
 module.exports = auth;

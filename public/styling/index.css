@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 :root{
-    --hue : 192;
+    --hue :360;
     --primary : hsl(var(--hue) , 50% ,50%);
     --white : #ffffff;
     --black : #3d3d3d;
@@ -17,6 +17,7 @@ body{
     width : 100%;
     min-height : 100vh;
     background-color:var(--black);
+    background: linear-gradient(180deg , #000000 , #e74c3c);
     display: flex;
     flex-direction: column;
 }
@@ -36,6 +37,7 @@ span{
 }
 .logout{
     border : 2px solid var(--primary);
+    box-shadow: 0px 0px 12px var(--primary);
     padding: 8px 15px;
     border-radius: 5px;
     
@@ -73,6 +75,8 @@ span{
 }
 .nav-items li{
     transition: all .1s ease-in-out;
+    /* border : 2px solid red; */
+    /* box-shadow : 0px 0px 8px rgba(0, 0, 0, 0.23); */
 }
 .nav-items li:hover{
     color : var(--primary);
@@ -189,9 +193,25 @@ input{
     text-transform: capitalize;
 }
 .main-page h1{
+    /* border :  2px solid red; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
     font-size : 84px;
     text-transform: capitalize;
     letter-spacing: 1px;
+}
+.lock{
+    animation: animate 1s ease-in-out 0s infinite alternate forwards;
+    /* border : 2px solid red; */
+    display: inline-block;
+}
+@keyframes animate{
+    0%{
+        transform: scale(.8);
+    }100%{
+        transform: scale(1);
+    }
 }
 .main-page a{
     border : 2px solid var(--primary);
@@ -200,7 +220,7 @@ input{
     margin-top: 15px;
     padding : 12px 75px;
     font-weight : 300;
-
+    box-shadow: 0px 0px 12px var(--primary);
     /* border-radius: 2p; */
     border-radius: 8px;
 }
@@ -254,3 +274,7 @@ button{
     text-align: center;
     letter-spacing: 1px;
 }
+
+
+
+/* active , visited ,hover ,  */
