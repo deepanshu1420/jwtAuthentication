@@ -11,15 +11,26 @@
         </div>
         <div class="login-page">
             <form action="/login" method="POST">
+                
+                {{#if error}}
+                    <p style="color: #e74c3c; text-align: center; margin-bottom: 15px;">{{error}}</p>
+                {{/if}}
+                {{#if success}}
+                    <p style="color: #2ecc71; text-align: center; margin-bottom: 15px;">{{success}}</p>
+                {{/if}}
+
                 <div class="field" id="email">
-                    <label for="email">email</label>
-                    <input id="email" type="email" name="email" placeholder="enter your email here ...">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Enter your email here...">
                 </div>
                 <div class="field">
-                    <label for="password">password</label>
-                    <input id="password" type="password" name="password" placeholder="enter your password here ...">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" placeholder="Enter your password here...">
                 </div>
-                <input type="submit" value="log me in">
+                <button type="submit" class="btn-modern">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Log Me In</span>
+                </button>
             </form>
         </div>
     </div>

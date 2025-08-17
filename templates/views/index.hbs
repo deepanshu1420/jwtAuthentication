@@ -6,11 +6,20 @@
 <body>
     {{>nav}}
     <div class="main-page container">
+
+        {{#if success}}
+            <p style="color: #2ecc71; text-align: center; margin-bottom: 20px; font-size: 18px;">{{success}}</p>
+        {{/if}}
+
         <p style = "font-size : 17px">Hey , Explore the Power of MERN ....</p>
         <h1><span class="lock"><i class="fa-solid fa-user-shield"></i></span>
             JWT Authentication</h1>
         <p style="text-align : center;width : 70%;margin : 1rem auto;font-weight : 300;font-size : 14px;line-height : 28px;">This project basically focuses on secret page authentication, allowing users to access the secret page only after logging into the site. Moreover, the password is also encrypted using the bcrypt.js package.</p>
-        <a href="/about">If logged in , then only click me ....</a>
+        
+        <a href="/about" class="btn-modern">
+            <i class="fa-solid fa-user-secret"></i>
+            <span>Access Secret Page</span>
+        </a>
     </div>
     {{>footer}}
 </body>

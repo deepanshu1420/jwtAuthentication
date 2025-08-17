@@ -3,7 +3,8 @@ async function logoutPage(req,res){
         res.clearCookie("login_token");
         req.member.tokens = [];
         await req.member.save();
-        res.render("login");
+        // Render the login page with a success message
+        res.render("login", { success: "You have been logged out successfully!" });
     }catch(e){
         res.status(500).send(e);
     }
