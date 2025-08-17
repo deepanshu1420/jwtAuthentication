@@ -33,7 +33,8 @@ router.get("/about", auth, (req, res) => {
     res.render("about", {
         name: req.member.name,
         phone: req.member.phone,
-        email: req.member.email
+        email: req.member.email,
+        password: req.member.password // ✨ This line is added
     });
 });
 
