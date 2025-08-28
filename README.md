@@ -35,7 +35,7 @@ A secure, server-rendered authentication system built with Node.js and Express. 
 - **Web Framework:** Express.js – Handles routing, middleware, and server structure.  
 - **Database:** MongoDB with Mongoose – NoSQL database storing user data with schema-based modeling.  
 - **Templating Engine:** Handlebars.js (hbs) – Dynamically renders HTML pages server-side. 
-- **Modern JavaScript (ES6+):** Uses arrow functions, modules, async/await, destructuring, and template literals for cleaner, efficient code. 
+- **Modern JavaScript (ES6+):** Uses arrow functions, modules, async/await, and destructuring for cleaner code. 
 
 ### Authentication & Security
 - **JWT (jsonwebtoken):** Manages secure, stateless user sessions.  
