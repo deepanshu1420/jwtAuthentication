@@ -5,16 +5,43 @@
 </head>
 <body>
     {{>nav}}
-    <div class="main-page container about-page">
-        <p>Hey ! welcome now you are accessing the secret page ....</p>
-        
-        <h1>{{name}}</h1>
-        <div class="info">
-            <p><span>{{email}}</span> &nbsp; | &nbsp; <span>{{phone}}</span></p>
+   <div class="main-page container about-page">
+    <p class="intro"><i class="fa-solid fa-rocket"></i> Hey, Welcome now you are accessing the secret page ....</p>
+    
+    <h1 class="user-name">{{name}}</h1>
+    
+    <ul class="about-info">
+        <li><i class="fa-solid fa-envelope"></i> Email: <span>{{email}}</span></li>
+        <li><i class="fa-solid fa-phone"></i> Phone number: <span>{{phone}}</span></li>
+        <li><i class="fa-solid fa-lock"></i> Encrypted Password: <span>{{password}}</span></li>
+        <li><i class="fa-solid fa-user-shield"></i> Access granted only to logged-in users with secret page privileges.</li>
+    </ul>
+    <!-- JWT Tokens Usage Section -->
+    <div class="jwt-usage">
+        <button class="jwt-button"> <i class="fa-solid fa-angle-left"></i> JWT Tokens in Action <i class="fa-solid fa-angle-right"></i></button>
+        <div class="jwt-icons">
+            <div class="icon-box">
+                <i class="fa-solid fa-university"></i>
+                <p>Net Banking</p>
+            </div>
+            <div class="icon-box">
+                <i class="fa-brands fa-instagram"></i>
+                <p>Social Media Login</p>
+            </div>
+            <div class="icon-box">
+                <i class="fa-solid fa-shopping-cart"></i>
+                <p>E-Commerce</p>
+            </div>
+            <div class="icon-box">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <p>Email Authentication</p>
+            </div>
+            <div class="icon-box">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <p>Mobile App Security</p>
+            </div>
         </div>
-        <p class="password" style="font-size : 22px">Encrypted Password : <span>{{password}}</span></p>
-        <p>This data is retrieved dynamically from the database, granted only to logged-in users who have access to the secret page.</p>
     </div>
-    {{>footer}}
+</div>
 </body>
 </html>

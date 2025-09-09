@@ -3,24 +3,40 @@
 <head>
     {{>meta}}
 </head>
-<body>
+<body class="index-page bg-image">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
     {{>nav}}
+
     <div class="main-page container">
 
         {{#if success}}
             <p style="color: #2ecc71; text-align: center; margin-bottom: 20px; font-size: 18px;">{{success}}</p>
         {{/if}}
 
-        <p style = "font-size : 17px">Hey , Explore the Power of MERN ....</p>
-        <h1><span class="lock"><i class="fa-solid fa-user-shield"></i></span>
-            JWT Authentication</h1>
-        <p style="text-align : center;width : 70%;margin : 1rem auto;font-weight : 300;font-size : 14px;line-height : 28px;">This project basically focuses on secret page authentication, allowing users to access the secret page only after logging into the site. Moreover, the password is also encrypted using the bcrypt.js package.</p>
+        <p class="sub-text"><i class="fa-solid fa-rocket"></i>Hey, Explore the Power of MERN ....</p>
+
+        <h1 class="jwt-heading">
+            <span class="lock"><i class="fa-solid fa-user-shield"></i></span>
+            JWT Authentication
+        </h1>
+
+        <div class="description-box">
+    <ul class="description-list">
+        <li><i class="fa-solid fa-shield-halved"></i> Implements secure access control using JWT-based authentication.</li>
+        <li><i class="fa-solid fa-key"></i> Only logged-in users can access secret protected pages.</li>
+        <li><i class="fa-solid fa-lock"></i> User credentials are encrypted and safeguarded with bcrypt.js.</li>
+        <li><i class="fa-solid fa-circle-check"></i> JWT tokens verify identity and protect sensitive data throughout the session.</li>
+    </ul>
+</div>
+
         
         <a href="/about" class="btn-modern">
             <i class="fa-solid fa-user-secret"></i>
             <span>Access Secret Page</span>
         </a>
     </div>
+
     {{>footer}}
 </body>
 </html>

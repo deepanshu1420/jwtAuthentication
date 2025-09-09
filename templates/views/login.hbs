@@ -13,7 +13,7 @@
             <form action="/login" method="POST">
                 
                 {{#if error}}
-                    <p style="color: #e74c3c; text-align: center; margin-bottom: 15px;">{{error}}</p>
+                    <p id="error-message" style="color: #e74c3c; text-align: center; margin-bottom: 15px;">{{error}}</p>
                 {{/if}}
                 {{#if success}}
                     <p style="color: #2ecc71; text-align: center; margin-bottom: 15px;">{{success}}</p>
@@ -21,7 +21,7 @@
 
                 <div class="field" id="email">
                     <label for="email">Email</label>
-                    <input id="email" type="email" name="email" placeholder="Enter your email here...">
+                    <input id="email" type="text" name="email" placeholder="Enter your email here..." value="{{email}}">
                 </div>
                 <div class="field">
                     <label for="password">Password</label>
@@ -35,5 +35,17 @@
         </div>
     </div>
     {{>footer}}
+
+    <script>
+        const errorMessage = document.getElementById('error-message');
+        if (errorMessage) {
+            const formInputs = document.querySelectorAll('.login-page input');
+            formInputs.forEach(input => {
+                input.addEventListener('input', () => {
+                    errorMessage.style.display = 'none';
+                });
+            });
+        }
+    </script>
 </body>
 </html>

@@ -1,34 +1,69 @@
 const People = require("../models/peopleSchema");
 const bcrypt = require("bcryptjs");
 
-async function loginPeople(req,res){
-    try{
-        const {password , email} = req.body;
-        const member = await People.findOne({email});
-        if(member){
-            const isValid = await bcrypt.compare(password , member.password);
-            if(isValid){
-                const token = await member.generateToken();
-                res.cookie("login_token" , token);
+async function loginPeople(req, res) {
+    try {
+        const { email, password } = req.body;
 
-                // Set a temporary cookie with the success message
-                res.cookie("message", "You have been logged in successfully!", { 
-                    maxAge: 5000, // The cookie will expire in 5 seconds
-                    httpOnly: false 
-                });
+        // --- VALIDATION LOGIC AS REQUESTED ---
 
-                res.redirect("/"); // Redirect to the homepage
-            }else{
-                res.status(400).render("login", { 
-                    error: "Invalid email or password. Please try again." 
-                });
-            }
-        }else{
-            res.status(400).render("login", { 
-                error: "Invalid email or password. Please try again." 
+        // 1. Check if both fields are empty first
+        if (!email && !password) {
+            return res.status(400).render("login", {
+                error: "All fields are required."
             });
         }
-    }catch(e){
+
+        // 2. Then, check the email field specifically
+        if (!email) {
+            return res.status(400).render("login", {
+                error: "Email field is required."
+            });
+        }
+        
+        // 3. If email is present, validate its format
+        if (!email.includes('@') || !email.includes('.')) {
+            return res.status(400).render("login", {
+                error: "Please enter a valid email address (must include '@' and '.com')",
+                email: email
+            });
+        }
+
+        // 4. Finally, check the password field
+        if (!password) {
+            return res.status(400).render("login", {
+                error: "Password field is required.",
+                email: email
+            });
+        }
+
+        // If all checks pass, proceed with login
+        const member = await People.findOne({ email });
+        if (member) {
+            const isValid = await bcrypt.compare(password, member.password);
+            if (isValid) {
+                const token = await member.generateToken();
+                res.cookie("login_token", token);
+
+                res.cookie("message", "You have been logged in successfully!", {
+                    maxAge: 5000,
+                    httpOnly: false
+                });
+
+                res.redirect("/");
+            } else {
+                res.status(400).render("login", {
+                    error: "Invalid email or password. Please try again!",
+                    email: email
+                });
+            }
+        } else {
+            res.status(400).render("login", {
+                error: "Invalid email or password. Please try again!",
+                email: email
+            });
+        }
+    } catch (e) {
         res.status(500).send(e);
     }
 }
