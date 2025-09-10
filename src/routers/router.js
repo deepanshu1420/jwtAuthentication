@@ -7,11 +7,21 @@ const logoutPage = require("../controllers/logoutPage");
 const auth = require("../middleware/auth");
 const router = new express.Router();
 
-const checkAuthStatus = (req, res, next) => {
+const checkAuthStatus = async (req, res, next) => {
     try {
         const token = req.cookies.login_token;
-        jwt.verify(token, process.env.SECRET_KEY);
-        res.locals.isLoggedIn = true;
+        if (token) {
+            const verify = jwt.verify(token, process.env.SECRET_KEY);
+            const member = await People.findById(verify._id);
+            
+            if (member && member.tokens.some(tokenObj => tokenObj.token === token)) {
+                res.locals.isLoggedIn = true;
+            } else {
+                res.locals.isLoggedIn = false;
+            }
+        } else {
+            res.locals.isLoggedIn = false;
+        }
     } catch (e) {
         res.locals.isLoggedIn = false;
     }
@@ -22,11 +32,16 @@ router.use(checkAuthStatus);
 
 // Homepage Route - Handles login success message
 router.get("/", (req, res) => {
-    const successMessage = req.cookies.message || null;
-    if (successMessage) {
-        res.clearCookie("message");
+    try {
+        const successMessage = req.cookies.message || null;
+        if (successMessage) {
+            res.clearCookie("message");
+        }
+        res.render("index", { success: successMessage });
+    } catch (error) {
+        console.log("Template render error:", error);
+        res.status(500).send("Error rendering homepage");
     }
-    res.render("index", { success: successMessage });
 });
 
 router.get("/about", auth, (req, res) => {
