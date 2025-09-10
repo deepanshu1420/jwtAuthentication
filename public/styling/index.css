@@ -830,4 +830,103 @@ body::after {
   }
 }
 
+/* ✅ Mobile & Tablet screens (≤768px) */
+@media (max-width: 768px) {
+
+  /* --- About Page Fixes --- */
+  .about-page {
+    width: 95%;
+    margin: 20px auto;
+    padding: 0 10px;
+    text-align: center;           /* keep text centered */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about-page .intro {
+    font-size: 12.7px;              /* smaller & readable */
+    margin-top: 180px;
+    text-align: center;           /* center on mobile */
+    word-break: break-word;
+    line-height: 1;
+    padding: 0 8px;               /* prevent cutoff */
+  }
+
+  .about-page .user-name {
+    font-size: 27px;              /* reduced for mobile */
+    margin-bottom: 0;
+    margin-top: -8px;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  /* --- About Info (Email, Phone, Encrypted, Password) --- */
+  .about-info {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .about-info li {
+    display: block;
+    margin-bottom: 0.9rem;
+    font-size: 13.8px;
+    line-height: 1.4;
+    word-break: break-all;
+    text-align: left;
+  }
+
+  .about-info li i {
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  /* --- JWT Usage Section --- */
+  .jwt-usage {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .jwt-button {
+    width: 70%;
+    margin: 2rem auto;
+    padding: 7px 11px;
+    font-size: 13px;
+  }
+
+  /* --- JWT Icons --- */
+  .jwt-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 8px;
+    margin: 1rem auto 3rem auto;
+    width: 95%;
+  }
+
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;                   /* 2 per row instead of 4 squished */
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .icon-box i {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .icon-box p {
+    font-size: 11px;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+}
+
 
