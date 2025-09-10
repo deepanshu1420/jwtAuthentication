@@ -13,7 +13,7 @@
             <form action="/register" method="POST" novalidate>
                 
                 {{#if error}}
-                    <p id="error-message" style="font-size: 14px; color: #FFEB3B; text-align: center; margin-bottom: 15px; position: relative; left: -26px; top: 18px;">{{error}}</p>
+                    <p class="error-message" id="error-message">{{error}}</p>
                 {{/if}}
                 
                 <div class="field">

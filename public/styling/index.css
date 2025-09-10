@@ -725,14 +725,13 @@ body::after {
 
 /* --- LOGIN PAGE STYLES (MOBILE) --- */
 @media (max-width: 768px) {
-  /* ... (your existing mobile media query styles) ... */
 
   .login-box {
     width: 90%;
     margin-top: 12vh; /* Adjust this value to move the box down */
     margin-left: auto; /* Center the box */
     margin-right: auto;
-    margin-bottom: 28vh; 
+    margin-bottom: 26vh; 
     height: auto;
     padding: 30px;
     backdrop-filter: blur(20px);
@@ -760,6 +759,75 @@ body::after {
   .btn-modern {
     /* Make the login button full width and centered */
     width: 100%;
-    margin-top: 15px;
+    margin-top: 30px;
   }
 }
+
+.error-message {
+    font-size: 14px;
+    color: #FFEB3B;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    left: -26px;
+    top: 18px;
+}
+
+
+/* ✅ Mobile & Tablet screens (≤768px) */
+@media (max-width: 768px) {
+
+  /* --- Register Page --- */
+  .register-page {
+    /* Stack elements vertically */
+    flex-direction: column; 
+    /* Center the stacked elements */
+    align-items: center; 
+    /* Add some top margin to push it down from the navbar */
+    margin-top: 12px; 
+    padding: 0 15px; /* Add horizontal padding for a clean look */
+  }
+
+  .error-message {
+    width: 90%; /* Adjust the width to fit mobile screens */
+    margin-left: 46px;
+    font-size: 12.3px;
+    margin-top: -32px;
+    margin-bottom: 30px;
+  }
+
+  .register-page .box1,
+  .register-page .box2 {
+    /* Make both boxes take full width on mobile */
+    width: 100%; 
+  }
+
+  .register-page .box1 {
+    /* Hide the large image on mobile for better performance and usability */
+    display: none; 
+  }
+
+  .register-page .box2 {
+    /* Add padding to the form container */
+    padding: 20px; 
+  }
+
+  .register-page form {
+    /* Ensure the form takes full width */
+    width: 100%; 
+  }
+
+  .register-page .field {
+    /* Adjust width to fit the mobile container */
+    width: 100%; 
+    margin: 15px 0; /* Adjust vertical spacing */
+  }
+
+  .btn-register {
+    /* Adjust the button margin to align correctly */
+    margin-left: 0; 
+    margin-top: 30px;
+  }
+}
+
+
