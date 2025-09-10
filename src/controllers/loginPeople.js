@@ -46,9 +46,10 @@ async function loginPeople(req, res) {
 
                 res.cookie("login_token", token, {
                     httpOnly: true,
-                    secure: process.env.NODE_ENV === "production", // true on Vercel
+                    secure: true,
                     sameSite: "strict",
-                    path: "/"
+                    path: "/",
+                    maxAge: 24 * 60 * 60 * 1000
                 });
 
                 res.cookie("message", "You have been logged in successfully!", {

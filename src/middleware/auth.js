@@ -12,13 +12,23 @@ async function auth(req, res, next) {
         const member = await People.findById(verify._id);
 
         if (!member) {
+            res.clearCookie("login_token");
             return res.status(401).render("login"); // user not found
         }
 
+        // Check if the token exists in the user's tokens array
+        const tokenExists = member.tokens.some(tokenObj => tokenObj.token === token);
+        
+        if (!tokenExists) {
+            res.clearCookie("login_token");
+            return res.status(401).render("login");
+        }
+
         req.member = member;
-        req.token = verify._id;
+        req.token = token;
         next();
     } catch (e) {
+        res.clearCookie("login_token");
         res.status(401).render("login"); // invalid/expired token
     }
 }
