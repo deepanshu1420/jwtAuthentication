@@ -571,7 +571,7 @@ body::after {
 
     body {
     width: 100%;
-    min-height: 85vh; /* Decreased from 100vh */
+    min-height: 90vh; /* Decreased from 100vh */
     background: linear-gradient(180deg, #000000, #e74c3c);
     display: flex;
     flex-direction: column;
