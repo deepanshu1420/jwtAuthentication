@@ -3,7 +3,7 @@
 [![MERN Stack](https://img.shields.io/badge/MERN-Stack-blue)](https://www.mongodb.com/mern-stack) [![Node.js](https://img.shields.io/badge/Node.js-v20-green)](https://nodejs.org/) [![Express](https://img.shields.io/badge/Express-v4-blue)](https://expressjs.com/) [![MongoDB](https://img.shields.io/badge/MongoDB-v7-green)](https://www.mongodb.com/) [![Handlebars](https://img.shields.io/badge/Handlebars-v4-orange)](https://handlebarsjs.com/) [![JWT](https://img.shields.io/badge/JWT-Secure-blue)](https://jwt.io/) [![Bcrypt](https://img.shields.io/badge/Bcrypt-Secure-purple)](https://www.npmjs.com/package/bcryptjs) [![Validator](https://img.shields.io/badge/Validator-v13-teal)](https://www.npmjs.com/package/validator) [![dotenv](https://img.shields.io/badge/dotenv-v16-green)](https://www.npmjs.com/package/dotenv) [![Nodemon](https://img.shields.io/badge/Nodemon-v2.0.22-yellowgreen)](https://www.npmjs.com/package/nodemon) [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 **This project demonstrates a secure authentication system using Node.js, Express.js, MongoDB, and JWTs for session management. Users can register, login, access protected routes, and logout safely.**
-<br>
+<br><br>
 🌐 Live Demo &nbsp; [Unlock the Power of JWT Authentication](https://jwtauth-secure.vercel.app/)
 
 ---
