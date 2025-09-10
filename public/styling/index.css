@@ -569,12 +569,18 @@ body::after {
 /* ✅ Mobile & Tablet screens (≤768px) */
 @media (max-width: 768px) {
 
-  /* Prevent horizontal scroll & fix background */
   html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
     position: relative;
-    background-attachment: fixed; /* background fixed when scrolling */
+
+    /* ✅ background fixed and smaller height */
+    background-size: 100% auto;   /* scale width, control height */
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   /* Reset default margins/padding */
