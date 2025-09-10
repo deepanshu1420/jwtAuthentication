@@ -569,14 +569,6 @@ body::after {
 /* ✅ Mobile & Tablet screens (≤768px) */
 @media (max-width: 768px) {
 
-    body {
-    width: 100%;
-    min-height: 95vh; /* Decreased from 100vh */
-    background: linear-gradient(180deg, #000000, #e74c3c);
-    display: flex;
-    flex-direction: column;
-}
-
    /* Prevent horizontal scroll & fix background */
     html, body {
         max-width: 100% !important;
