@@ -6,6 +6,11 @@
 
 ---
 
+## 🌐 Live Demo
+[🛡️ Unlock the Power of JWT Authentication](https://jwtauth-secure.vercel.app/)
+
+---
+
 ## 🌟 Overview
 
 A secure, server-rendered authentication system built with Node.js and Express. It leverages JWT tokens for session management, bcrypt for password hashing, and MongoDB (via Mongoose) for storing user data. Handlebars.js (hbs) is used for dynamic server-side rendering of pages.  
@@ -14,6 +19,7 @@ A secure, server-rendered authentication system built with Node.js and Express. 
 - JWTs are used to protect sensitive routes.  
 - Passwords are securely hashed with bcrypt.  
 - Environment variables are stored in a `.env` file.  
+- Fast internet required for smooth rendering and DB access; slow connection may cause login issues.
 
 ---
 
@@ -23,7 +29,9 @@ A secure, server-rendered authentication system built with Node.js and Express. 
 - **User Login** – Authenticate users and issue JWT tokens.  
 - **Protected Routes** – Access restricted pages only if logged in.  
 - **Logout** – Safely terminate session by clearing JWT.  
-- **Server-Side Rendering** – Pages rendered using Handlebars templates.  
+- **Server-Side Rendering** – Pages rendered using Handlebars templates.
+- **Form Validation** – Real-time checks and server-side sanitization for all forms.
+- **Modern UI & Animations** – Liquid glass-style components with responsive design and smooth effects.  
 
 ---
 
@@ -80,6 +88,14 @@ A secure, server-rendered authentication system built with Node.js and Express. 
 ### 6. Logout
 ![Logout](./screenshots/logout.png)  
 *JWT cleared from cookies, ending user session securely.*
+
+### 7. Mobile View (HomePage)
+![Mobile Home](./screenshots/MobileHome.png)  
+*Responsive layout using CSS flex/grid, optimized navigation and content display for smaller screens.*
+
+### 8. Mobile View (Secret Page)
+![Mobile Secret Page](./screenshots/MobileSecretPage.png)  
+*Protected page adapts to mobile viewports, ensuring secure content access and usability on handheld devices.*
 
 ---
 
