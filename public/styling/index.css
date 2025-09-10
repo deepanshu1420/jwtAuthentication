@@ -575,6 +575,7 @@ body::after {
     overflow-x: hidden !important;
     position: relative;
     background-attachment: fixed; /* background fixed when scrolling */
+     background-size: 100% 900px;
   }
 
   /* Reset default margins/padding */
