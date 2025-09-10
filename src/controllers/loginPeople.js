@@ -43,7 +43,13 @@ async function loginPeople(req, res) {
             const isValid = await bcrypt.compare(password, member.password);
             if (isValid) {
                 const token = await member.generateToken();
-                res.cookie("login_token", token);
+
+                res.cookie("login_token", token, {
+                    httpOnly: true,
+                    secure: process.env.NODE_ENV === "production", // true on Vercel
+                    sameSite: "strict",
+                    path: "/"
+                });
 
                 res.cookie("message", "You have been logged in successfully!", {
                     maxAge: 5000,
