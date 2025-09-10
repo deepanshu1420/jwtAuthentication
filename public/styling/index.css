@@ -574,13 +574,13 @@ body::after {
         max-width: 100% !important;
         overflow-x: hidden !important;
         position: relative;
-        background-attachment: fixed; /* Change from 'fixed' to 'scroll' */
+        background-attachment: scroll; /* Change from 'fixed' to 'scroll' */
     }
 
    /* Transparent background image for index page */
   body::after {
     content: "";
-    position: fixed; /* ✨ Change fixed to absolute here ✨ */
+    position: absolute; /* ✨ Change fixed to absolute here ✨ */
     top: 0;
     left: 0;
     width: 100%;
