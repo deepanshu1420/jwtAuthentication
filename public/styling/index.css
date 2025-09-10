@@ -732,7 +732,7 @@ body::after {
     margin-top: 12vh; /* Adjust this value to move the box down */
     margin-left: auto; /* Center the box */
     margin-right: auto;
-    margin-bottom: 27vh; 
+    margin-bottom: 28vh; 
     height: auto;
     padding: 30px;
     backdrop-filter: blur(20px);
