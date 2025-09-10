@@ -566,7 +566,15 @@ body::after {
     100% { transform: translateY(0); }
 }
 
-/* ✅ Mobile & Tablet screens (≤768px) */
+/* === Desktop / Default === */
+.success-message {
+  color: #2ecc71;             /* green text */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* ✅ Mobile & Tablet screens for index(home) screen (≤768px) */
 @media (max-width: 768px) {
 
    /* Prevent horizontal scroll & fix background */
@@ -595,6 +603,19 @@ body::after {
     margin: 0;
     padding: 0;
   }
+
+  .success-message {
+  position: absolute;
+  top: 120px; /* adjust based on your layout */
+  left: 52%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: #2ecc71;
+  padding: 6px 12px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
 
   /* Containers */
   .main-page, .container {
@@ -774,7 +795,7 @@ body::after {
 }
 
 
-/* ✅ Mobile & Tablet screens (≤768px) */
+/* ✅ Mobile & Tablet screens for register section (≤768px) */
 @media (max-width: 768px) {
 
   /* --- Register Page --- */
