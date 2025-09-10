@@ -5,7 +5,7 @@ async function postPeople(req, res) {
         const { name, email, phone, password, cpassword } = req.body;
         const formData = req.body; // Store user input to pass back on error
 
-        // --- VALIDATION ORDER UPDATED ---
+        // --- VALIDATION ORDER UPDATED --- //
 
         // 1. Check for specific field errors first
         if (email && (!email.includes('@') || !email.includes('.'))) {
