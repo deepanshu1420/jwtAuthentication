@@ -1,5 +1,9 @@
 async function logoutPage(req, res) {
+const connectDB = require("../db/conn");
     try {  
+         // Ensure DB is connected before any DB operations
+         await connectDB();
+         
         res.clearCookie("login_token", {
             httpOnly: true,
             secure: true,

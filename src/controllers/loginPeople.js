@@ -1,8 +1,12 @@
 const People = require("../models/peopleSchema");
 const bcrypt = require("bcryptjs");
+const connectDB = require("../db/conn");
 
 async function loginPeople(req, res) {
     try {
+        // Ensure DB is connected (safe for Vercel)
+        await connectDB();
+        
         const { email, password } = req.body;
 
         // --- VALIDATION LOGIC AS REQUESTED ---

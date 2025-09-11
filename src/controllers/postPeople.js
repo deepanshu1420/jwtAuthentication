@@ -1,7 +1,11 @@
 const People = require("../models/peopleSchema");
+const connectDB = require("../db/conn");
 
 async function postPeople(req, res) {
     try {
+        // Ensure DB is connected (safe for Vercel)
+        await connectDB();
+        
         const { name, email, phone, password, cpassword } = req.body;
         const formData = req.body; // Store user input to pass back on error
 

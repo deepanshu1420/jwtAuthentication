@@ -23,9 +23,10 @@
                     <label for="email">Email</label>
                     <input id="email" type="text" name="email" placeholder="Enter your email here..." value="{{email}}">
                 </div>
-                <div class="field">
+                <div class="field password-field">
                     <label for="password">Password</label>
                     <input id="password" type="password" name="password" placeholder="Enter your password here...">
+                    <i class="fa-solid fa-eye toggle-password" data-target="password"></i>
                 </div>
                 <button type="submit" class="btn-modern">
                     <i class="fa-solid fa-right-to-bracket"></i>
@@ -37,6 +38,7 @@
     {{>footer}}
 
     <script>
+        // Hide error message on input
         const errorMessage = document.getElementById('error-message');
         if (errorMessage) {
             const formInputs = document.querySelectorAll('.login-page input');
@@ -46,6 +48,23 @@
                 });
             });
         }
+      // Toggle password visibility
+      const toggleIcons = document.querySelectorAll('.toggle-password');
+      toggleIcons.forEach(icon => {
+         icon.addEventListener('click', () => {
+            const targetId = icon.getAttribute('data-target');
+            const input = document.getElementById(targetId);
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    });
     </script>
 </body>
 </html>

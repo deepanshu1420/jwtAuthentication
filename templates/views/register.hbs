@@ -28,15 +28,16 @@
                     <label for="Phone"><span>Phone number</span></label>
                     <input type="number" id="Phone" placeholder="Enter your phone number" name="phone" value="{{formData.phone}}">
                 </div>
-                <div class="field">
+                <div class="field password-field">
                     <label for="password"><span>Password</span></label>
                     <input type="password" id="password" placeholder="Enter your password" name="password">
-                </div>
-                <div class="field">
-                    <label for="Password"><span>Confirm Password</span></label>
-                    <input type="password" placeholder="Enter your confirm password" name="cpassword">
-                </div>
-                
+                    <i class="fa-solid fa-eye toggle-password" data-target="password"></i>
+                    </div>
+                <div class="field password-field">
+                    <label for="cpassword"><span>Confirm Password</span></label>
+                    <input type="password" id="cpassword" placeholder="Enter your confirm password" name="cpassword">
+                    <i class="fa-solid fa-eye toggle-password" data-target="cpassword"></i>
+                </div>     
                 <button type="submit" class="btn-modern btn-register">
                     <i class="fa-solid fa-user-plus"></i>
                     <span>Register Me</span>
@@ -45,6 +46,7 @@
         </div>
     </div>
     <script>
+        // Hide error on input
         const errorMessage = document.getElementById('error-message');
         if (errorMessage) {
             const formInputs = document.querySelectorAll('.register.box2 input');
@@ -54,6 +56,23 @@
                 });
             });
         }
+         // Toggle password visibility
+        const toggleIcons = document.querySelectorAll('.toggle-password');
+        toggleIcons.forEach(icon => {
+          icon.addEventListener('click', () => {
+            const targetId = icon.getAttribute('data-target');
+            const input = document.getElementById(targetId);
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+               }
+           });
+        });
     </script>
 </body>
 </html>

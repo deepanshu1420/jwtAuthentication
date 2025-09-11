@@ -1,5 +1,5 @@
 require("dotenv").config();
-require("./db/conn");
+const connectDB = require("./db/conn");
 const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
@@ -33,6 +33,9 @@ const startServer = ()=>{
     const port = process.env.PORT;
     app.listen(port , ()=>{
         console.log(`server is active at ${port}`);
+
+        // Connect to MongoDB after server starts
+        connectDB().catch(err => console.error("DB connection error:", err));
     })
 };
 
