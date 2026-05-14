@@ -89,7 +89,7 @@ A secure server-rendered authentication system built with Node.js and Express. I
 
 - **🌐 MERN Stack:** MongoDB, Express.js, React.js (optional frontend), Node.js  
 - **🚀 Runtime Environment:** Node.js (Executes server-side JavaScript)  
-- **🧩 Web Framework:** Express.js (Handles routing, middleware, and server structure) 
+- **🧩 Web Framework:** Express.js (Handles routing, middleware and server structure) 
 - **🗄️ Database:** MongoDB with Mongoose (NoSQL database storing user data with schema-based modeling)  
 - **📄 Templating Engine:** Handlebars.js `.hbs` (Dynamically renders HTML pages server-side) 
 - **💡 Modern JavaScript (ES6+):** Uses arrow functions, modules, async/await and destructuring for cleaner code. 
