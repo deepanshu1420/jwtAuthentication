@@ -87,12 +87,12 @@ A secure server-rendered authentication system built with Node.js and Express. I
 
 ### 1️⃣ Core Technologies
 
-- **🌐 MERN Stack:** MongoDB, Express.js, React (optional frontend), Node.js  
-- **🚀 Runtime Environment:** Node.js – Executes server-side JavaScript.  
-- **🧩 Web Framework:** Express.js – Handles routing, middleware, and server structure.  
-- **🗄️ Database:** MongoDB with Mongoose – NoSQL database storing user data with schema-based modeling.  
-- **📄 Templating Engine:** Handlebars.js (hbs) – Dynamically renders HTML pages server-side. 
-- **💡 Modern JavaScript (ES6+):** Uses arrow functions, modules, async/await, and destructuring for cleaner code. 
+- **🌐 MERN Stack:** MongoDB, Express.js, React.js (optional frontend), Node.js  
+- **🚀 Runtime Environment:** Node.js (Executes server-side JavaScript)  
+- **🧩 Web Framework:** Express.js (Handles routing, middleware, and server structure) 
+- **🗄️ Database:** MongoDB with Mongoose (NoSQL database storing user data with schema-based modeling)  
+- **📄 Templating Engine:** Handlebars.js `.hbs` (Dynamically renders HTML pages server-side) 
+- **💡 Modern JavaScript (ES6+):** Uses arrow functions, modules, async/await and destructuring for cleaner code. 
 
 ### 2️⃣ Authentication & Security
 
@@ -102,9 +102,9 @@ A secure server-rendered authentication system built with Node.js and Express. I
 
 ### 3️⃣ Utility & Development Tools
 
-- **⚙️ Environment Variables:** dotenv – Loads secrets like DB URIs and JWT keys.  
-- **🍪 Cookie Management:** cookie-parser – Parses cookies for JWT storage.  
-- **🧪 Development Workflow:** Nodemon – Auto-restarts server on code changes.  
+- **⚙️ Environment Variables:** dotenv (Loads secrets like DB URIs and JWT keys) 
+- **🍪 Cookie Management:** cookie-parser (Parses cookies for JWT storage) 
+- **🧪 Development Workflow:** Nodemon (Auto-restarts server on code changes) 
 
 ## 🛠️ Setup and Installation
 
