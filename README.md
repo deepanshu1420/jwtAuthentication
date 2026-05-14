@@ -41,7 +41,7 @@ A secure server-rendered authentication system built with Node.js and Express. I
 - **❌ Access Denied** → Invalid or expired JWT immediately blocks unauthorized access   
 - **🚪 Secure Logout** → JWT tokens are cleared from cookies, safely ending the user session 
 
-## ✅ Advantages
+## ✅ Benefits / Advantages
 
 - **🔒 Highly Secure:** JWT is modern, widely used in netbanking apps and popular platforms to secure data.  
 - **📦 Stateless Sessions:** No server-side session storage required, reducing server load.  
