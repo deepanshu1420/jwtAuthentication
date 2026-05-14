@@ -8,7 +8,7 @@
 
 ## 🌟 Overview
 
-A secure server-rendered authentication system built with Node.js and Express. It leverages JWT tokens for session management, bcrypt.js for password hashing and MongoDB (via Mongoose) for storing user data. Handlebars.js (hbs) is used for dynamic server-side rendering of pages.  
+A secure server-rendered authentication system built with Node.js and Express.js. It leverages JWT tokens for session management, bcrypt.js for password hashing and MongoDB (via Mongoose) for storing user data. Handlebars.js (hbs) is used for dynamic server-side rendering of pages.  
 
 **Important Notes:**  
 
