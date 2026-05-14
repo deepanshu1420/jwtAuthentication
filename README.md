@@ -35,7 +35,7 @@ A secure server-rendered authentication system built with Node.js and Express.js
 - **🔒 User Login** → User logs in using credentials, server generates an Access Token (JWT) & a Refresh Token  
 - **🍪 Token Storage** → Tokens are securely stored in browser cookies or local/session storage  
 - **📩 Authorized Requests** → User sends JWT in the Authorization header with future requests   
-- **✅ Token Verification** → Server verifies JWT signature using its secret key before granting access   
+- **☑️ Token Verification** → Server verifies JWT signature using its secret key before granting access   
 - **♻️ Access Token Expiry** → If access token expires, refresh token generates a new JWT automatically
 - **🔓 Access Granted** → If token is valid, user gets access to protected routes and resources
 - **❌ Access Denied** → Invalid or expired JWT immediately blocks unauthorized access   
