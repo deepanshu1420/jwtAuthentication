@@ -26,20 +26,20 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 **Structure of JWT:**
 
-- 🧾 **Header:** Contains token type (`JWT`) and signing algorithm like `HS256`
-- 📦 **Payload:** Stores user-related data like user ID, email and roles
-- ✍️ **Signature:** Verifies token authenticity and prevents token tampering
+- 🧾 **Header:** Contains token type (`JWT`) and signing algorithm like `HS256`.
+- 📦 **Payload:** Stores user-related data like user ID, email and roles.
+- ✍️ **Signature:** Verifies token authenticity and prevents token tampering.
 
 ## ⚙️ How JWT Authentication Works?
 
-- **🔒 User Login** → User logs in using credentials, server generates an Access Token (JWT) & a Refresh Token  
-- **🍪 Token Storage** → Tokens are securely stored in browser cookies or local/session storage  
-- **📩 Authorized Requests** → User sends JWT in the Authorization header with future requests   
-- **☑️ Token Verification** → Server verifies JWT signature using its secret key before granting access   
-- **♻️ Access Token Expiry** → If access token expires, refresh token generates a new JWT automatically
-- **🔓 Access Granted** → If token is valid, user gets access to protected routes and resources
-- **❌ Access Denied** → Invalid or expired JWT immediately blocks unauthorized access   
-- **🚪 Secure Logout** → JWT tokens are cleared from cookies, safely ending the user session 
+- **🔒 User Login** → User logs in using credentials, server generates an Access Token (JWT) & a Refresh Token. 
+- **🍪 Token Storage** → Tokens are securely stored in browser cookies or local/session storage.
+- **📩 Authorized Requests** → User sends JWT in the Authorization header with future requests.   
+- **☑️ Token Verification** → Server verifies JWT signature using its secret key before granting access.   
+- **♻️ Access Token Expiry** → If access token expires, refresh token generates a new JWT automatically.
+- **🔓 Access Granted** → If token is valid, user gets access to protected routes and resources.
+- **❌ Access Denied** → Invalid or expired JWT immediately blocks unauthorized access.
+- **🚪 Secure Logout** → JWT tokens are cleared from cookies, safely ending the user session. 
 
 ## ✅ Benefits / Advantages
 
