@@ -19,7 +19,7 @@ A secure server-rendered authentication system built with Node.js and Express. I
 
 ## 🔐 So, What is JWT?
 
-- 🔐 JWT (JSON Web Token) is a `stateless authentication method` used for secure user authentication.
+- 🔐 JWT (JSON Web Token) is a `stateless token-based mechanism` used for secure user authentication.
 - 📱 Commonly used in Instagram login systems, banking applications, secure dashboards and modern web APIs.
 - 🛡️ Helps applications verify trusted users and protect private routes from unauthorized access.
 - ⚡ Eliminates the need for traditional server-side session storage, making applications faster and scalable.
