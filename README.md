@@ -32,14 +32,14 @@ A secure server-rendered authentication system built with Node.js and Express. I
 
 ## ⚙️ How JWT Authentication Works?
 
-**1️⃣ User Login** → User logs in using credentials, server generates an Access Token (JWT) & a Refresh Token 🔐  
-**2️⃣ Token Storage** → Tokens are securely stored in browser cookies or local/session storage 🍪  
-**3️⃣ Authorized Requests** → User sends JWT in the Authorization header with future requests 📩  
-**4️⃣ Token Verification** → Server verifies JWT signature using its secret key before granting access ✅  
-**5️⃣ Access Token Expiry** → If access token expires, refresh token generates a new JWT automatically ♻️
-**6️⃣ Access Granted** → If token is valid, user gets access to protected routes and resources 🛡️
-**7️⃣ Access Denied** → Invalid or expired JWT immediately blocks unauthorized access ❌   
-**8️⃣ Secure Logout** → JWT tokens are cleared from cookies, safely ending the user session 🚪 
+- **1️⃣ User Login** → User logs in using credentials, server generates an Access Token (JWT) & a Refresh Token 🔐  
+- **2️⃣ Token Storage** → Tokens are securely stored in browser cookies or local/session storage 🍪  
+- **3️⃣ Authorized Requests** → User sends JWT in the Authorization header with future requests 📩  
+- **4️⃣ Token Verification** → Server verifies JWT signature using its secret key before granting access ✅  
+- **5️⃣ Access Token Expiry** → If access token expires, refresh token generates a new JWT automatically ♻️
+- **6️⃣ Access Granted** → If token is valid, user gets access to protected routes and resources 🛡️
+- **7️⃣ Access Denied** → Invalid or expired JWT immediately blocks unauthorized access ❌   
+- **8️⃣ Secure Logout** → JWT tokens are cleared from cookies, safely ending the user session 🚪 
 
 ## ✅ Advantages
 
