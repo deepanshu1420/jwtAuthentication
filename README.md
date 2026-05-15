@@ -106,7 +106,7 @@ A secure server-rendered authentication system built with Node.js and Express.js
 - **🍪 Cookie Management:** cookie-parser (Parses cookies for JWT storage) 
 - **🧪 Development Workflow:** Nodemon (Auto-restarts server on code changes) 
 
-## 🛠️ Setup and Installation
+## ⚙️ Setup and Installation
 
 Follow these steps to run the project locally on your machine:
 
