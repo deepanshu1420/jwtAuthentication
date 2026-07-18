@@ -28,7 +28,7 @@ A secure server-rendered authentication system built with Node.js and Express.js
 - 🔑 JWTs are used to protect sensitive routes.  
 - 🛡️ Passwords are securely hashed with bcrypt.js node package.  
 - ⚙️ Environment variables are stored in `.env` file.  
-- 🌐 Fast internet required for smooth rendering and DB access, slow connection may cause login issues.
+- 🛜 Fast internet required for smooth rendering and DB access, slow connection may cause login issues.
 
 ## 🪪 So, What is JWT?
 
