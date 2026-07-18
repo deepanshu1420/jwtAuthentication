@@ -13,7 +13,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-gold)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Git](https://img.shields.io/badge/Git-v2-brown)](https://git-scm.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-ff69b4)](https://vercel.com/)
-[![License](https://img.shields.io/badge/License-MIT-olive)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-black)](LICENSE)
 
 **This project demonstrates a secure authentication system using Node.js, Express.js, MongoDB and JWTs for session management. Users can register, log in securely, access protected routes seamlessly and log out safely.**
 
