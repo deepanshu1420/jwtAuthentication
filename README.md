@@ -59,7 +59,7 @@ A secure server-rendered authentication system built with Node.js and Express.js
 - **🔒 Highly Secure:** JWT is modern, widely used in netbanking apps and popular platforms to secure data.  
 - **📦 Stateless Sessions:** No server-side session storage required, reducing server load.  
 - **🛠️ Tamper-Proof:** Tokens are digitally signed, protecting data from hackers. 
-- **🔑 HS256 Security:** HS256 (HMAC-SHA256) securely signs and verifies JWT tokens.   
+- **🔑 HS256 Security:** `HS256 (HMAC-SHA256)` securely signs and verifies JWT tokens.   
 - **🌍 Scalable:** Easy to use in distributed systems and large-scale applications.  
 
 ## 📸 Screenshots / Demo
