@@ -37,11 +37,11 @@ A secure server-rendered authentication system built with Node.js and Express.js
 - 🛡️ Helps applications verify trusted users and protect private routes from unauthorized access.
 - ⚡ Eliminates the need for traditional server-side session storage, making applications faster and scalable.
 
-**Structure of JWT:**
+> Structure of JWT:
 
-- 🧾 **Header:** Contains token type (`JWT`) and signing algorithm like `HS256`.
+- 🧾 **Header:** Contains token type (JWT) and signing algorithm such as `HS256` (`HMAC-SHA256`).
 - 📦 **Payload:** Stores user-related data like user ID, email and roles.
-- ✍️ **Signature:** Verifies token authenticity and prevents token tampering.
+- ✍️ **Signature:** Verifies token authenticity and `prevents token tampering`.
 
 ## ⚙️ How JWT Authentication Works?
 
