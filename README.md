@@ -70,7 +70,7 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### 🏠 Home (Before Login)
 ![Home](./screenshots/home.png)  
-*`Landing page` showing available actions and navigation.*
+*Landing page showing available `actions and navigation`.*
 
 ### 🔐 Login
 ![Login](./screenshots/login.png)  
