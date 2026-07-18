@@ -6,7 +6,7 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-v7-lime)](https://www.mongodb.com/)
 [![Handlebars](https://img.shields.io/badge/Handlebars-v4-orange)](https://handlebarsjs.com/)
 [![JWT](https://img.shields.io/badge/JWT-Secure-red)](https://jwt.io/)
-[![Bcrypt](https://img.shields.io/badge/Bcrypt-Secure-purple)](https://www.npmjs.com/package/bcryptjs)
+[![Bcrypt](https://img.shields.io/badge/Bcrypt-v3.0.3-purple)](https://www.npmjs.com/package/bcryptjs)
 [![Validator](https://img.shields.io/badge/Validator-v13-teal)](https://www.npmjs.com/package/validator)
 [![dotenv](https://img.shields.io/badge/dotenv-v16-cyan)](https://www.npmjs.com/package/dotenv)
 [![Nodemon](https://img.shields.io/badge/Nodemon-v2.0.22-yellow)](https://www.npmjs.com/package/nodemon)
