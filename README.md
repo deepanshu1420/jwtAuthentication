@@ -70,11 +70,11 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### 🏠 Home (Before Login)
 ![Home](./screenshots/home.png)  
-*Landing page showing available actions and navigation.*
+*`Landing page` showing available actions and navigation.*
 
 ### 🔐 Login
 ![Login](./screenshots/login.png)  
-*Login form requesting email and password.*
+*Login form requesting `email and password`.*
 
 ### ✅ Login Success
 ![Login Success](./screenshots/loginSuccess.png)  
