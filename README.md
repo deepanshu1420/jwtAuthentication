@@ -121,36 +121,39 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ## 🛠️ Setup and Installation
 
-> Follow these steps to run the project locally on your machine:
+> To set up and run the project locally, follow these steps below:
 
 ### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/deepanshu1420/jwtAuthentication.git
+```
+
+### 2️⃣ Navigate to the project directory
+
+```bash
 cd jwtAuthentication
 ```
 
-### 2️⃣ Install Dependencies
+### 3️⃣ Install the required dependencies
 
-Make sure you have **Node.js** installed, then run:
+> Make sure you have `Node.js` installed, then run:
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Start the Development Server
+### 4️⃣ Start the development server
 
 ```bash
 npm run dev
 ```
 
-### 4️⃣ Open the Application
-
-Open your browser and visit:
+✅ **That's it!** The project should now be running locally at:
 
 ```bash
 http://localhost:3000
 ```
 
-The app should now be running locally 🚀
+Open the URL in your browser and explore a complete `JWT Authentication` system in action. ☄️
 
