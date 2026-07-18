@@ -58,7 +58,7 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 - **🔒 Highly Secure:** JWT is modern, widely used in netbanking apps and popular platforms to secure data.  
 - **📦 Stateless Sessions:** No server-side session storage required, reducing server load.  
-- **🛠️ Tamper-Proof:** Tokens are digitally signed, protecting data from hackers. 
+- **🔧 Tamper-Proof:** Tokens are digitally signed, protecting data from hackers. 
 - **🔑 HS256 Security:** HS256 (HMAC-SHA256) securely signs and verifies JWT tokens.   
 - **🌍 Scalable:** Easy to use in distributed systems and large-scale applications.  
 
@@ -100,8 +100,8 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### 1️⃣ Core Technologies
 
-- **🌐 MERN Stack:** MongoDB, Express.js, React.js (optional frontend), Node.js  
-- **🚀 Runtime Environment:** Node.js (Executes server-side JavaScript)  
+- **⚛️ MERN Stack:** MongoDB, Express.js, React.js (optional frontend), Node.js  
+- **🟢 Runtime Environment:** Node.js (Executes server-side JavaScript)  
 - **🧩 Web Framework:** Express.js (Handles routing, middleware and server structure) 
 - **🗄️ Database:** MongoDB with Mongoose (NoSQL database storing user data with schema-based modeling)  
 - **📄 Templating Engine:** Handlebars.js `.hbs` (Dynamically renders HTML pages server-side) 
@@ -115,11 +115,11 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### 3️⃣ Utility & Development Tools
 
-- **⚙️ Environment Variables:** dotenv (Loads secrets like DB URIs and JWT keys) 
+- **🧬 Environment Variables:** dotenv (Loads secrets like DB URIs and JWT keys) 
 - **🍪 Cookie Management:** cookie-parser (Parses cookies for JWT storage) 
 - **🧪 Development Workflow:** Nodemon (Auto-restarts server on code changes) 
 
-## ⚙️ Setup and Installation
+## 🛠️ Setup and Installation
 
 Follow these steps to run the project locally on your machine:
 
