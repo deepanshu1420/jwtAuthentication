@@ -115,7 +115,7 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### 3️⃣ Utility & Development Tools
 
-- **🧬 Environment Variables:** dotenv (Loads secrets like DB URIs and JWT keys) 
+- **🧬 Environment Variables (.env):** dotenv (Loads secrets like DB URIs and JWT keys) 
 - **🍪 Cookie Management:** cookie-parser (Parses cookies for JWT storage) 
 - **🧪 Development Workflow:** Nodemon (Auto-restarts server on code changes) 
 
