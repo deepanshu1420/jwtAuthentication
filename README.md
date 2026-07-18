@@ -17,7 +17,7 @@
 
 This project demonstrates a `secure authentication system` using Node.js, Express.js, MongoDB and JWTs for session management. Users can register, log in securely, access protected routes seamlessly and log out safely.
 
-**🌐 Unlock the Power of JWT Authentication :** [Live Demo](https://jwtauth-secure.vercel.app/)
+**🌐 Unlock the Power of JWT Authentication :** [Live Demo](https://jwtauthsecure.vercel.app/)
 
 ## 🌟 Overview
 
