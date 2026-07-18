@@ -15,15 +15,15 @@
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-ff69b4)](https://vercel.com/)
 [![License](https://img.shields.io/badge/License-MIT-black)](LICENSE)
 
-**This project demonstrates a secure authentication system using Node.js, Express.js, MongoDB and JWTs for session management. Users can register, log in securely, access protected routes seamlessly and log out safely.**
+This project demonstrates a `secure authentication system` using Node.js, Express.js, MongoDB and JWTs for session management. Users can register, log in securely, access protected routes seamlessly and log out safely.
 
 **🌐 Unlock the Power of JWT Authentication :** [Live Demo](https://jwtauth-secure.vercel.app/)
 
 ## 🌟 Overview
 
-A secure server-rendered authentication system built with Node.js and Express.js. It leverages JWT tokens for session management, bcrypt.js for password hashing and MongoDB (via Mongoose) for storing user data. Handlebars.js (hbs) is used for dynamic server-side rendering of pages.  
+A secure server-rendered authentication system built with Node.js and Express.js. It leverages JWT tokens for session management, `bcrypt.js for password hashing` and MongoDB (via Mongoose) for storing user data. `Handlebars.js (hbs)` is used for dynamic server-side rendering of pages.  
 
-**Important Notes:**  
+> Important Notes: 
 
 - 🔐 JWTs are used to protect sensitive routes.  
 - 🛡️ Passwords are securely hashed with bcrypt.js node package.  
