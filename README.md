@@ -115,13 +115,13 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### 3️⃣ Utility & Development Tools
 
-- **🧬 Environment Variables `.env`:** dotenv (Loads secrets like DB URIs and JWT keys) 
+- **🧬 Environment Variables:** dotenv `.env` (Loads secrets like DB URIs and JWT keys) 
 - **🍪 Cookie Management:** cookie-parser (Parses cookies for JWT storage) 
 - **🧪 Development Workflow:** Nodemon (Auto-restarts server on code changes) 
 
 ## 🛠️ Setup and Installation
 
-Follow these steps to run the project locally on your machine:
+> Follow these steps to run the project locally on your machine:
 
 ### 1️⃣ Clone the Repository
 
