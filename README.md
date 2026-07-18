@@ -74,7 +74,7 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### 🔐 Login
 ![Login](./screenshots/login.png)  
-*Login form requesting `email and password`.*
+*Login form requesting `email and password` to verify user identity and authenticate access.*
 
 ### ✅ Login Success
 ![Login Success](./screenshots/loginSuccess.png)  
@@ -86,7 +86,7 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### 🚪 Logout
 ![Logout](./screenshots/logout.png)  
-*JWT cleared from cookies, ending user session securely.*
+*JWT `cleared from cookies`, ending user session securely.*
 
 ### 📱 Mobile View (HomePage)
 ![Mobile Home](./screenshots/MobileHome.png)  
