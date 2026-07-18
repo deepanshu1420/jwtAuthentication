@@ -143,7 +143,19 @@ cd jwtAuthentication
 npm install
 ```
 
-### 4️⃣ Start the development server
+### 4️⃣ Open the `.env.example` file, add your MongoDB credentials, then rename it to `.env`
+
+> Visit `https://www.mongodb.com/cloud/atlas` to create a free MongoDB Atlas cluster.
+
+```env
+PORT=3000
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+SECRET_KEY=your_jwt_secret_key
+```
+
+### 5️⃣ Start the development server
 
 ```bash
 npm run dev
