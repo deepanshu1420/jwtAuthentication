@@ -9,7 +9,7 @@
 [![Bcrypt](https://img.shields.io/badge/Bcrypt-v3-purple)](https://www.npmjs.com/package/bcryptjs)
 [![Validator](https://img.shields.io/badge/Validator-v13-teal)](https://www.npmjs.com/package/validator)
 [![dotenv](https://img.shields.io/badge/dotenv-v16-cyan)](https://www.npmjs.com/package/dotenv)
-[![Nodemon](https://img.shields.io/badge/Nodemon-v2.0.22-yellow)](https://www.npmjs.com/package/nodemon)
+[![Nodemon](https://img.shields.io/badge/Nodemon-v3-yellow)](https://www.npmjs.com/package/nodemon)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-gold)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Git](https://img.shields.io/badge/Git-v2-brown)](https://git-scm.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-ff69b4)](https://vercel.com/)
