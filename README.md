@@ -66,7 +66,7 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### 📝 Register
 ![Register](./screenshots/register.png)  
-*User registration form with validation and password hashing.*
+*`User registration form` with validation and password hashing.*
 
 ### 🏠 Home (Before Login)
 ![Home](./screenshots/home.png)  
@@ -78,11 +78,11 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### ✅ Login Success
 ![Login Success](./screenshots/loginSuccess.png)  
-*JWT token generated and stored in cookies upon successful login.*
+*JWT token generated and `stored in cookies` upon successful login.*
 
 ### 🛡️ Secret Page (Protected Route)
 ![Secret Page](./screenshots/secretPage.png)  
-*Access granted only with a valid JWT token.*
+*Access granted only with a `valid JWT token`.*
 
 ### 🚪 Logout
 ![Logout](./screenshots/logout.png)  
@@ -90,11 +90,11 @@ A secure server-rendered authentication system built with Node.js and Express.js
 
 ### 📱 Mobile View (HomePage)
 ![Mobile Home](./screenshots/MobileHome.png)  
-*Responsive layout using CSS flex/grid, optimized navigation and content display for smaller screens.*
+*`Responsive layout` using CSS flex/grid, optimized navigation and content display for smaller screens.*
 
 ### 📲 Mobile View (Secret Page)
 ![Mobile Secret Page](./screenshots/MobileSecretPage.png)  
-*Protected page adapts to mobile viewports, ensuring secure content access and usability on handheld devices.*
+*Protected page `adapts to mobile viewports`, ensuring secure content access and usability on handheld devices.*
 
 ## 🛠 Tech Stack Used
 
